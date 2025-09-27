@@ -1,0 +1,25 @@
+uggested Fields for Gym Membership Form
+
+Full Name
+
+Age
+
+DOB
+
+Gender (radio buttons: Male / Female / Other)
+
+Phone Number
+
+Email Address
+
+Address
+
+Membership Plan (dropdown: Monthly / Quarterly / Yearly)
+
+Preferred Workout Time (Morning / Afternoon / Evening)
+
+Health Conditions / Notes (textarea)
+
+Agreement Checkbox (e.g., “I agree to the gym rules and policies”)
+
+Submit & Reset Buttons

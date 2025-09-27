@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    display: flex;
+    gap: 20PX;
+}
+.logo h3{
+    color: white;
+}
+
+
+
+div img{
+    height: 30px;
+    width: 40px;
+}

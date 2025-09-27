@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Form</title>
+</head>
+<body>
+    <header>
+    <center>
+    
+        <div>
+            <h1>Gym Membership Form</h1>
+        </div>
+        <div>
+            <img src="assets/img/gymbanner.jpg" alt="gym" width="600px" height="350px">
+        </div>
+    </center>
+    </header>
+
+    <main>
+
+    <div>
+        <h2>Gym Membership - Digital Form Instructions</h2>
+    </div>
+    <ul style="list-style-type: none;">
+        <li>✔️ Must be 18 years or older (minors need parent/guardian consent).</li>
+        <li>✔️ Should be physically fit to participate in gym activities (or provide medical clearance if required).</li>
+        <li>✔️ Must provide valid ID proof (Aadhar, Driving License, etc.).</li>
+        <li>✔️ Should give accurate contact details (phone & email).</li>
+        <li>✔️ Must agree to gym rules, safety policies, and terms & conditions.</li>
+        <li>✔️ Membership becomes active only after payment confirmation.</li>
+    </ul>
+
+    </main>
+
+    <section>
+    <center>
+        <div><h2>Fill the Gym Membership Form</h2></div>
+            <form action="gym.html" method="post" autocomplete="off">
+                
+                <label for="fullname">Full Name: </label> 
+                <input type="text" id="fullname" maxlength="30" placeholder="Enter your fullname" required>
+                <br><br>
+                 
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="examble@gmail.com" required>
+                <br>
+                <br>
+
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" maxlength="10" placeholder="Enter your phone number" required>
+                <br>
+                <br>
+                
+                <label for="gender">Gender: </label>
+                <input type="radio" id="gender" name="genders">male
+                <input type="radio" id="gender" name="genders"> female
+                <br>
+                <br>
+                 
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob">
+                <br>
+                <br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="age" max="100" placeholder="Enter your age" required>
+                <br><br>
+                
+                <label for="address"> Address: </label><br>
+                <textarea  id="address" cols="40" rows="7" placeholder="Enter your address "></textarea>
+                 <br><br>
+                
+
+                
+                <label for="membership">Membership Plan: </label>
+                <select id="membership">
+                    <option value="" selected disabled>Choose Plans</option>
+                    <option value=" Monthly"> Monthly</option>
+                    <option value=" Quaterly">Quaterly </option>
+                    <option value=" Yearly"> Yearly</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="workouttime">Preferred Workout Time: </label>
+                <select id="workouttime">
+                    <option value="" selected disabled>Choose Time</option>
+                    <option value=" Morning"> Morning</option>
+                    <option value=" Afternoon">Afternoon </option>
+                    <option value=" Evening"> Evening</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="activity">Choose your preferred activities:</label>
+                <input type="checkbox" id="activity" name="activitys" value="Weightlifting"> Weightlifting
+                <input type="checkbox" id="activity" name="activitys" value="Weightloss"> Weightloss
+                <input type="checkbox" id="activity" name="activitys" value="Crossfitness"> Crossfitness
+                <input type="checkbox" id="activity" name="activitys" value="Aerobics"> Aerobics
+                <input type="checkbox" id="activity" name="activitys" value="Steambath"> Steambath
+                <br><br>
+
+
+                 <label for="payment">Payment method </label>
+                <select id="payment">
+                    <option value="" selected disabled>Choose payment: </option>
+                    <option value=" Cash"> Cash</option>
+                    <option value=" Card">Card</option>
+                    <option value=" UPI"> UPI</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="notes"> Health Conditions: </label><br>
+                <textarea  id="notes" cols="40" rows="7" placeholder="Write about your health condition"></textarea>
+                 <br><br>
+
+                <label for="photo">Upload your Photo: </label>
+                <input type="file" id="photo" accept="jpg,jpeg">
+                <br><br>
+
+                <label for="proof">Upload any Identity proof: </label>
+                <input type="file" id="proof" accept="jpg,jpeg" >
+                <br><br>
+
+                <label >
+                    <input type="checkbox" name="agree" required> I agree to the Terms &amp; Conditions.
+                </label>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </center>
+    </section>
+    <hr>
+    <center>
+    <section>
+    
+       <table border="1" cellpadding="2">
+        <thead>
+            <caption><h2>Gym Members Details:</h2></caption>
+            <tr>
+            <th><input type="checkbox"></th>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Membership plan</th>
+            <th>Workout Time</th>
+            <th>Payment Method</th>
+            <th>Photo</th>
+            <th>ID Proof</th>
+            <th>Status</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1</td>
+            <td>John</td>
+            <td>john12@gmail.com</td>
+            <td>9876453421</td>
+            <td>29</td>
+            <td>Male</td>
+            <td>Chennai</td>
+            <td>Quaterly</td>
+            <td>Morning</td>
+            <td>Cash</td>
+            <td><img src="assets/img/photo-1.jpg" alt="photo" width="80" height="60"></td>
+            <td><img src="assets/img/id-1.jpg" alt="identity" width="80"></td>
+            <td>Active</td>
+            <td><a href="">Update</a> | <a href="">Delete</a></td>
+        </tr>
+        
+         <tr>
+            <td><input type="checkbox"></td>
+            <td>2</td>
+            <td>Ronaldo</td>
+            <td>ronaldo07@gmail.com</td>
+            <td>9677645342</td>
+            <td>38</td>
+            <td>Male</td>
+            <td>Coimbatore</td>
+            <td>Monthly</td>
+            <td>Evening</td>
+            <td>UPI</td>
+            <td><img src="assets/img/photo-3.jpg" alt="photo" width="80" height="60"></td>
+            <td><img src="assets/img/id-3.jpg" alt="identity" width="80"></td>
+            <td>Active</td>
+            <td><a href="">Update</a> | <a href="">Delete</a></td>
+        </tr>
+
+         <tr>
+            <td><input type="checkbox"></td>
+            <td>3</td>
+            <td>Watson</td>
+            <td>watson56@gmail.com</td>
+            <td>3376487421</td>
+            <td>42</td>
+            <td>Male</td>
+            <td>Madurai</td>
+            <td>Anualy</td>
+            <td>Afternoon</td>
+            <td>Card</td>
+            <td><img src="assets/img/photo-2.jpg" alt="photo" width="80" height="60"></td>
+            <td><img src="assets/img/id-2.jpg" alt="identity" width="80"></td>
+            <td>Active</td>
+            <td><a href="">Update</a> | <a href="">Delete</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>4</td>
+            <td>Michal</td>
+            <td>michal27@gmail.com</td>
+            <td>5676487421</td>
+            <td>49</td>
+            <td>Male</td>
+            <td>Chennai</td>
+            <td>Anualy</td>
+            <td>Morning</td>
+            <td>Card</td>
+            <td><img src="assets/img/photo-4.jpg" alt="photo" width="80" height="60"></td>
+            <td><img src="assets/img/id-4.jpg" alt="identity" width="80"></td>
+            <td>Active</td>
+            <td><a href="">Update</a> | <a href="">Delete</a></td>
+        </tr>
+
+        </tbody>
+
+       </table>
+
+
+    </section>
+     </center>
+</body>
+</html>
