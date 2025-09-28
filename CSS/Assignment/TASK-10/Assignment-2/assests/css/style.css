@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="search"]{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+.address{
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 20px;
+    color: black;
+}
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   background-color: white; 
+   color: white;
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+.nav a{
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.banner{
+   display: flex;
+   width: 1366px;
+}
+.banner img{
+    width: 100vw;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+}
+.card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
