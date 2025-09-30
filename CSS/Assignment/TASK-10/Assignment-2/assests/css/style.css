@@ -11,17 +11,35 @@
     font-family:  Roboto Condensed, Helvetica, sans-serif;
     font-size: 15px;
     color: black;
+    padding-left: 20px;
 }
 
 .search-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.findbar{
+    color: rgb(104 119 135);
+    display: flex;
+    position: absolute;
+    left: 10px;
+}
+
+.search-container input{
+    background-color: #f5f4f5;
+    padding-left: 40px;
+    font-size: 16px;
+    border: 1px solid #f5f4f5;
+    outline: none;
 }
 input[type="search"]{
-    height: 40px;
-    width: 300px;
-    border-radius: 20px;
+    color: rgb(104 119 135);
+    height: 45px;
+    width: 400px;
+    border-radius: 25px;
+    border: none;
 }
 .address{
     font-family:  Roboto Condensed, Helvetica, sans-serif;
@@ -35,13 +53,14 @@ input[type="search"]{
    justify-content: space-between;
    background-color: white; 
    color: white;
+   height: 80px;
 
 }
 .nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 
 }
 .nav a{
@@ -50,16 +69,18 @@ input[type="search"]{
     text-decoration: none;
     color: black;
     padding-right: 20px;
+   
 }
 .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
 .banner{
    display: flex;
-   width: 1366px;
+   width: 1330px;
 }
 .banner img{
     width: 100vw;
@@ -70,6 +91,7 @@ input[type="search"]{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     gap: 30px;
     font-family:  Roboto Condensed, Helvetica, sans-serif;
 }
@@ -80,3 +102,41 @@ input[type="search"]{
     margin-top: 10px;
     font-size: 14px;
 }
+.parentcurosal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.childcurosal img{
+    display: flex;
+    width: 1330px;
+    height: 320px;
+
+}
+
+.parent_container{
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+.parent_container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentbanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.childbanner img{
+    display: flex;
+    width: 1330px;
+    height: 320px;
+}
+
