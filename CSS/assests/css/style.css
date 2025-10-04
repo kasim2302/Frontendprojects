@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #000;
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.logo{
+    display: flex;
+    gap: 20PX;
+}
+.logo h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+.logo img{
+    height: 30px;
+    width: 40px;
+}
+
