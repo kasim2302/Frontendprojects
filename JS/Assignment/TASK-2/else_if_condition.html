@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if condition in js</title>
+</head>
+
+<body>
+    <h2>else if condition in js</h2>
+
+
+    <script>
+        let a = 10
+        let b = 12
+        let c = 21
+        if (a > b) {
+            console.log(true)
+        }
+        else if (a < b) {
+            console.log(true)
+        }
+        else if (b > c) {
+            console.log(true)
+        }
+        else {
+            console.log(false)
+        }
+
+        let mark = 76
+        if (mark >= 91 && mark <= 100) {
+            console.log("A - grade")
+        }
+        else if (mark >= 81 && mark <= 90) {
+            console.log("B - grade")
+        }
+        else if (mark >= 71 && mark <= 80) {
+            console.log("C - grade")
+        }
+        else if (mark >= 61 && mark <= 70) {
+            console.log("D - grade")
+        }
+        else if (mark >= 51 && mark <= 60) {
+            console.log("E - grade")
+        }
+        else {
+            console.log("fail")
+        }
+
+        let num = -2
+        if (num > 1) {
+            console.log("Positive number")
+        }
+        else if (num < 0) {
+            console.log("Negative number")
+        }
+        else if (num === 0) {
+            console.log("The number is zero")
+        }
+        else {
+            console.log("not a number")
+        }
+
+
+        let month = 12
+        if (month === 12 || month === 1 || month === 2) {
+            console.log("Winter")
+        }
+        else if (month === 3 || month === 4 || month === 5) {
+            console.log("Summer")
+        }
+        else if (month === 6 || month === 7 || month === 8) {
+            console.log("Monsoon")
+        }
+        else if (month === 9 || month === 10 || month === 11) {
+            console.log("Autumn")
+        }
+        else {
+            console.log("invalid month")
+        }
+
+        let day = 5
+        if (day === 1) {
+            console.log("Monday")
+        }
+        else if (day === 2) {
+            console.log("Tuesday")
+        }
+        else if (day === 3) {
+            console.log("Wednesday")
+        }
+        else if (day === 4) {
+            console.log("Thursday")
+        }
+        else if (day === 5) {
+            console.log("Friday")
+        }
+        else if (day === 6) {
+            console.log("saturday")
+        }
+        else if (day === 7) {
+            console.log("Sunday")
+        }
+        else {
+            console.log("invalid day")
+        }
+
+        let age = 67
+        if (age <= 12) {
+            console.log("Child")
+        }
+        else if (age >= 13 && age <= 19) {
+            console.log("Teenager")
+        }
+        else if (age <= 59 && age >= 20) {
+            console.log("Adult")
+        }
+        else if (age >= 60) {
+            console.log("Senior Citizen")
+        }
+        else {
+            console.log("invalid age")
+        }
+
+        T_shirt_size = 112
+        if (T_shirt_size <= 90) {
+            console.log(" size - S")
+        }
+        else if (T_shirt_size >= 91 && T_shirt_size <= 100) {
+            console.log("size - M ")
+        }
+        else if (T_shirt_size >= 101 && T_shirt_size <= 110) {
+            console.log("size - L")
+        }
+        else if (T_shirt_size >= 111 && T_shirt_size <= 120) {
+            console.log("size - XL")
+        }
+        else {
+            console.log("invalid size")
+        }
+
+        let number = 60
+        if (number <= 50 && number >= 0) {
+            console.log("this number is present within 0-50")
+        }
+        else if (number <= 100 && number >= 50) {
+            console.log("this number is present within 50-100")
+
+        }
+        else if (number <= 150 && number >= 100) {
+            console.log("this number is present within 100-150")
+        }
+
+        let percentage = 68;
+
+        if (percentage >= 75) {
+            console.log("Distinction")
+        }
+        else if (percentage >= 60) {
+            console.log("First Class")
+        }
+        else if (percentage >= 50) {
+            console.log("Second Class")
+        }
+        else if (percentage < 50) {
+            console.log("Fail")
+        }
+
+        let hour = 13
+        if (hour >= 5 && hour <= 11) {
+            console.log("Morning")
+        }
+        else if (hour >= 12 && hour <= 16) {
+            console.log("Afternoon")
+        }
+        else if (hour >= 17 && hour <= 20) {
+            console.log("Evening")
+        }
+
+        let color = "yellow";
+
+        if (color === "red") {
+            console.log("Stop")
+        }
+        else if (color === "yellow") {
+            console.log("Get Ready")
+        }
+        else if (color === "green") {
+            console.log("Go")
+        }
+        else {
+            console.log("Invalid color");
+        }
+
+        let temprature = 32;
+
+        if (temprature <= 20) {
+            console.log("Cold")
+        }
+        else if (temprature <= 30) {
+            console.log("Warm")
+        }
+        else if (temprature > 30) {
+            console.log("Hot")
+        }
+        else {
+            console.log("Invalid temperature");
+        }
+
+        let age_movie = 65;
+
+        if (age_movie <= 12) {
+            console.log("Child ticket - ₹100")
+        }
+        else if (age_movie <= 59) {
+            console.log("Adult ticket - ₹200")
+        }
+        else if (age_movie >= 60) {
+            console.log("Senior ticket - ₹150")
+        }
+        else {
+            console.log("Invalid age")
+        }
+
+        let units = 250;
+
+        if (units <= 100) {
+            console.log("Low usage")
+        }
+        else if (units <= 200) {
+            console.log("Moderate usage")
+        }
+        else if (units <= 300) {
+            console.log("High usage")
+        }
+        else {
+            console.log("Very high usage")
+        }
+
+    </script>
+</body>
+
+</html>
