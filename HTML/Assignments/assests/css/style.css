@@ -47,16 +47,14 @@
 
 /* html intro section*/
 
-.home{
-    display: flex;
-    padding-top: 3px;
-}
+
 
 .html_intro{
     height: auto;
-    width: 1366px;
+    width: 1351px;
     padding: 30px 60px;
     background-color: #e7e9eb;
+    margin-top: 4px;
 }
 .html_intro h3{
     padding: 15px 0;
