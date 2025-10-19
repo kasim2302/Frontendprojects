@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    gap: 90px;
+    width: 1351px;
+    height: 60px;
+    align-items: center;
+    padding: 10px 40px;
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px 30px;
+
+}
+
+.logo h3{
+    color: #000;
+    font-family:  Roboto Condensed, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+
+
+.nav a:hover{
+    outline: 1px solid #fff;
+    color: #fff;
+    background-color: #195328;
+    transition: 0.2s ;
+    border-radius: 2px;
+
+}
+
+
+/* html intro section*/
+
+.home{
+    display: flex;
+    padding-top: 3px;
+}
+
+.html_intro{
+    height: auto;
+    width: 1366px;
+    padding: 30px 60px;
+    background-color: #e7e9eb;
+}
+.html_intro h3{
+    padding: 15px 0;
+}
+.html_intro p{
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* button for all section*/
+.button{
+    padding: 40px 0;
+}
+.button a{
+    text-decoration: none;
+    background-color: #195328;
+    color: white;
+    padding: 13px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.button a:hover{
+    opacity: 1;
+}
+  
+/* block level elements section*/
+.blocklevel{
+    height: auto;
+    width: 1351px;
+    padding: 0 60px;
+    background-color: #e7e9eb;
+}
+.blocklevel h3{
+    padding: 15px 0;
+}
+
+.blocklevel p{
+    line-height: 2;
+    font-size: 16px;
+}
+
+
+/* inline level section*/
+
+.inlinelevel{
+    height: auto;
+    width: 1351px;
+    padding: 0 60px;
+    background-color: #e7e9eb;
+}
+.inlinelevel h3{
+    padding: 15px 0;
+}
+
+.inlinelevel p{
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* sementic element section*/
+
+.sementic{
+    height: auto;
+    width: 1351px;
+    padding: 0 60px;
+    background-color: #e7e9eb;
+}
+.sementic h3{
+    padding: 15px 0;
+}
+
+.sementic p{
+    line-height: 2;
+    font-size: 16px;
+}
+
