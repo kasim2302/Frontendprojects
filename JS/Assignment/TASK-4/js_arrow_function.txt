@@ -1,0 +1,117 @@
+const institute = (sla) => {
+     console.log(sla)
+}
+institute(" sla institute")
+
+const math_course = (math) =>{
+     console.log(math)
+}
+math_course("Aptitude")
+
+const fish_keeping = (fish) => {
+    console.log(fish)
+}
+fish_keeping("molly tophical fish")
+
+const play_music = (music) => {
+    console.log(music)
+}
+play_music("play oorum blood song")
+
+const read_book = (book) => {
+    console.log(book)
+}
+read_book("read novels")
+
+const book_ticket = (ticket) => {
+    console.log(ticket)
+}
+book_ticket("2 tickets bookes to chennai")
+  
+const check_identity = (identity) => {
+    console.log(identity)
+}  
+check_identity("your identity has been checked")
+
+const check_mark = (mark) => {
+    console.log(mark)
+}
+check_mark("your total mark is : 450/500")
+
+const startCar = (car) => {
+    console.log(car)
+}
+startCar("car started successfully")
+
+const openDoor = (door) => {
+    console.log(door)
+}
+openDoor("please open the door")
+
+const turnOnlight = (light) => {
+    console.log(light)
+}
+turnOnlight("please on the light")
+
+const makeCofee = (cofee) => {
+    console.log(cofee)
+}
+makeCofee("can i have one cofee please")
+
+const feedPet =  (feed) => {
+    console.log(feed)
+}
+feedPet("which food can i feed")
+
+const cookDinner = (dinner) => {
+    console.log(dinner)
+}
+cookDinner("make delicious dinner")
+
+const filterList = (list) => {
+     console.log(list)
+}
+filterList("filter student data here")
+
+const play_games = (games) => {
+     console.log(games)
+}
+play_games("let's start the game god of war")
+
+const record_video = (video) => {
+     console.log(video)
+}
+record_video("let's start to record video")
+
+const click_image = (image) => {
+     console.log("click the image to capture those moments")
+}
+const check_otp = (otp) => {
+    console.log(otp)
+}
+check_otp(" your otp : 3456 , please check here!")
+
+const send_mail = (mail) => {
+    console.log(mail)
+}
+send_mail("mail has been sended successfully to the TL.")
+
+const typeFast = (type) => {
+    console.log(type)
+}
+typeFast("please type fast")
+
+const callFriend = (call) => {
+   console.log(call)
+}
+callFriend("make call")
+
+const changeWater = (water) => {
+     console.log(water)
+}
+changeWater("please the water in fish tank!")
+
+const change_tab  = (tab) => {
+     console.log(tab)
+}
+change_tab("change to another tab")

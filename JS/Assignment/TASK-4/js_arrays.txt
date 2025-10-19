@@ -1,0 +1,76 @@
+let fruits = ["apple",false,"banana","orange","mango"]
+console.log(fruits[0])
+console.log(fruits[1])
+console.log(fruits[2])
+console.log(fruits[3])
+
+let vegetables = ["onoin","tomato",true,"potato","carrot"]
+console.log(vegetables[0])
+console.log(vegetables[1])
+console.log(vegetables[2])
+console.log(vegetables[3])
+
+let phones = ["iphone","redmi","vivo","oppo"]
+console.log(phones[0])
+console.log(phones[1])
+console.log(phones[2])
+console.log(phones[3])
+
+let room_numbers = [23,45,67,89,56]
+console.log(room_numbers[0])
+console.log(room_numbers[1])
+console.log(room_numbers[2])
+console.log(room_numbers[3])
+console.log(room_numbers[4])
+
+let arr1 = ["device",45,null,false]
+console.log(arr1[0])
+console.log(arr1[1])
+console.log(arr1[2])
+console.log(arr1[3])
+
+let animals = ["dog", "cat", "lion", "tiger"]
+console.log(animals[0])
+console.log(animals[1])
+console.log(animals[2])
+console.log(animals[3])
+
+let colors = ["red", "blue",true, "green", "yellow"]
+console.log(colors[0])
+console.log(colors[1])
+console.log(colors[2])
+console.log(colors[3])
+console.log(colors[4])
+
+let bikes = ["yamaha", "honda", "suzuki", "royal enfield"]
+console.log(bikes[0])
+console.log(bikes[1])
+console.log(bikes[2])
+console.log(bikes[3])
+
+let laptops = ["lenovo", "hp", "dell", "asus"]
+console.log(laptops[0])
+console.log(laptops[1])
+console.log(laptops[2])
+console.log(laptops[3])
+
+let countries = ["india", "japan", "usa", "canada",true]
+console.log(countries[0])
+console.log(countries[1])
+console.log(countries[2])
+console.log(countries[3])
+console.log(countries[4])
+
+let subjects = ["maths", "science", "english", "history",null]
+console.log(subjects[0])
+console.log(subjects[1])
+console.log(subjects[2])
+console.log(subjects[3])
+console.log(subjects[4])
+
+let cars = ["tesla", "bmw",null, "audi", "toyota"]
+console.log(cars[0])
+console.log(cars[1])
+console.log(cars[2])
+console.log(cars[3])
+console.log(cars[4])

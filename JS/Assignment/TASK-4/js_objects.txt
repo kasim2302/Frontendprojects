@@ -1,0 +1,159 @@
+let obj1 = {
+    fruit: "orange",
+    quantity: 5 ,
+    price: 250 , 
+    is_available = true
+    }
+console.log(obj1.fruit)
+console.log(obj1.quantity)
+console.log(obj1.price)
+console.log(obj1.is_available)
+
+let frontend = {
+    program: "javascript", 
+    invented_year: 1995 ,
+    frame_work: "reactjs" ,
+    css_framework: "bootstrap"
+    }
+
+console.log(frontend.program)
+console.log(frontend.invented_year)
+console.log(frontend.frame_work)
+console.log(frontend.css_framework)
+
+let backend = {
+    program: "javascript",
+    invented_year: 1995 , 
+    frame_work: "nodejs" , 
+    css_framework: "tailwind" }
+
+console.log(backend.program)
+console.log(backend.invented_year)
+console.log(backend.frame_work)
+console.log(backend.css_framework)
+
+let restaurant = {
+    name: "Spicy Delight",
+    opened_year: 2010,
+    cuisine: "Indian",
+    rating: 4.5
+}
+console.log(restaurant.name)
+console.log(restaurant.opened_year)
+console.log(restaurant.cuisine)
+console.log(restaurant.rating)
+
+let movie = {
+    title: "Inception",
+    released_year: 2010,
+    genre: "Sci-Fi",
+    director: "Christopher Nolan"
+};
+console.log(movie.title)
+console.log(movie.released_year)
+console.log(movie.genre)
+console.log(movie.director)
+
+let book = {
+    title: "Harry Potter",
+    published_year: 1997,
+    author: "J.K. Rowling",
+    genre: "Fantasy"
+};
+console.log(book.title)
+console.log(book.published_year)
+console.log(book.author)
+console.log(book.genre)
+
+let car =  {
+    brand: "tesla",
+    model: "model 2",
+    specs:{
+        battery: "75kwh"
+        range: "350km"
+        autopilot: true
+    }
+}
+console.log(car.brand)
+console.log(car.model)
+console.log(car.specs.battery)
+console.log(car.specs.range)
+console.log(car.specs.autopilot)
+
+let restaurant = {
+    name: "Spicy Delight",
+    location: "Chennai",
+    menu: {
+        starters: ["Paneer Tikka", "Samosa"],
+        main_course: ["Biryani", "Butter Chicken"],
+        desserts: ["Gulab Jamun", "Ice Cream"]
+    }
+}
+console.log(restaurant.name)
+console.log(restaurant.location)
+console.log(restaurant.menu.starters)
+console.log(restaurant.menu.main_course)
+console.log(restaurant.menu.desserts)
+
+
+let movie = {
+    title: "Inception",
+    released_year: 2010,
+    cast: {
+        lead_actor: "Leonardo DiCaprio",
+        supporting_actor: "Joseph Gordon-Levitt",
+        actress: "Elliot Page"
+    }
+}
+console.log(movie.title)
+console.log(movie.released_year)
+console.log(movie.cast.lead_actor)
+console.log(movie.cast.supporting_actor)
+console.log(movie.cast.actress)
+
+let school = {
+    name: "Sunrise High",
+    established: 2005,
+    principal: {
+        name: "Mr. Sharma",
+        age: 50,
+        experience: "25 years"
+    }
+}
+console.log(school.name)
+console.log(school.established)
+console.log(school.principal.name)
+console.log(school.principal.age)
+console.log(school.principal.experience)
+
+
+let book = {
+    title: "Harry Potter",
+    author: "J.K. Rowling",
+    publication: {
+        year: 1997,
+        publisher: "Bloomsbury",
+        edition: "First"
+    }
+};
+console.log(book.title);
+console.log(book.author);
+console.log(book.publication.year);
+console.log(book.publication.publisher);
+console.log(book.publication.edition);
+
+let app = {
+    name: "WhatsApp",
+    platform: "Android",
+    features: {
+        messaging: true,
+        voice_call: true,
+        video_call: true
+    }
+};
+console.log(app.name);
+console.log(app.platform);
+console.log(app.features.messaging);
+console.log(app.features.voice_call);
+console.log(app.features.video_call);
+

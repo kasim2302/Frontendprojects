@@ -1,0 +1,59 @@
+function add(a,b){
+    console.log("Addition: ",a+b)
+}
+add(30,23)
+
+function sub(){
+    console.log("Subtraction: ",i-j)
+}
+sub(45,23)
+
+function book(title,author){
+    console.log("The title of book is",title,". The author name is ",author)
+}
+book("Lord of the rings","Tolkien")
+
+function multiplication(m,n){
+    console.log("multiplication of",m,"*",n,"is",m*n)
+}
+multiplication(20,3)
+
+function division(num1,num2){
+    console.log("The division of",num1,"/",num2,"is: ",num1/num2)
+}
+division(10,5)
+
+function signin(text){
+    console.log(text)
+}
+signin("signed in succesfully")
+
+function login(text1){
+    console.log(text1)
+}
+login("Logged in succesfully")
+
+function message(msg){
+    console.log(msg)
+}
+message("hello! how are you?")
+
+function course(crs){
+     console.log(crs)
+}
+course("Welcome to full stack course")
+
+function submit(msg1){
+    console.log(msg1)
+}
+submit("your response submited succesfully")
+
+function wishlist(msg2){
+    console.log(msg2)
+}
+wishlist("product added into wishlist.")
+
+function order_id(id){
+     console.log(id)
+}
+order_id("order id generated successfully.")     

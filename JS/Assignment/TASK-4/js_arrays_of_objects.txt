@@ -1,0 +1,212 @@
+let fruits = [
+  {name: "Apple", color: "Red", price: 50},
+  {name: "Banana", color: "Yellow", price: 20},
+  {name: "Mango", color: "Orange", price: 60}
+]
+console.log(fruits[0].name)
+console.log(fruits[0].color)
+console.log(fruits[0].price)
+
+console.log(fruits[1].name)
+console.log(fruits[1].color)
+console.log(fruits[1].price)
+
+console.log(fruits[2].name)
+console.log(fruits[2].color)
+console.log(fruits[2].price)
+
+let vegetables = [
+  {name: "Onion", color: "Purple", price: 30},
+  {name: "Tomato", color: "Red", price: 25},
+  {name: "Carrot", color: "Orange", price: 40}
+]
+console.log(vegetables[0].name)
+console.log(vegetables[0].color)
+console.log(vegetables[0].price)
+
+console.log(vegetables[1].name)
+console.log(vegetables[1].color)
+console.log(vegetables[1].price)
+
+console.log(vegetables[2].name)
+console.log(vegetables[2].color)
+console.log(vegetables[2].price)
+
+let cars = [
+  {brand: "Tesla", model: "Model 3", price: 50000},
+  {brand: "BMW", model: "X5", price: 60000},
+  {brand: "Audi", model: "A4", price: 55000}
+]
+
+console.log(cars[0].brand)
+console.log(cars[0].model)
+console.log(cars[0].price)
+
+console.log(cars[1].brand)
+console.log(cars[1].model)
+console.log(cars[1].price)
+
+console.log(cars[2].brand)
+console.log(cars[2].model)
+console.log(cars[2].price)
+
+let movies = [
+  {title: "Inception", director: "Nolan", year: 2010},
+  {title: "Avatar", director: "Cameron", year: 2009},
+  {title: "Titanic", director: "Cameron", year: 1997}
+]
+console.log(movies[0].title)
+console.log(movies[0].director)
+console.log(movies[0].year)
+
+console.log(movies[1].title)
+console.log(movies[1].director)
+console.log(movies[1].year)
+
+console.log(movies[2].title)
+console.log(movies[2].director)
+console.log(movies[2].year)
+
+let books = [
+  {title: "Harry Potter", author: "J.K. Rowling", year: 1997},
+  {title: "Lord of the Rings", author: "Tolkien", year: 1954},
+  {title: "The Alchemist", author: "Paulo Coelho", year: 1988}
+]
+
+console.log(books[0].title)
+console.log(books[0].author)
+console.log(books[0].year)
+
+console.log(books[1].title)
+console.log(books[1].author)
+console.log(books[1].year)
+
+console.log(books[2].title)
+console.log(books[2].author)
+console.log(books[2].year)
+
+let phones = [
+  {brand: "iPhone", model: "13", price: 70000},
+  {brand: "Samsung", model: "S21", price: 60000},
+  {brand: "OnePlus", model: "9 Pro", price: 50000}
+]
+console.log(phones[0].brand)
+console.log(phones[0].model)
+console.log(phones[0].price)
+
+console.log(phones[1].brand)
+console.log(phones[1].model)
+console.log(phones[1].price)
+
+console.log(phones[2].brand)
+console.log(phones[2].model)
+console.log(phones[2].price)
+
+let restaurants = [
+    {name: "Spicy Delight", cuisine: "Indian", rating: 4.5},
+    {name: "Sushi World", cuisine: "Japanese", rating: 4.7},
+    {name: "Pasta House", cuisine: "Italian", rating: 4.6}
+]
+
+console.log(restaurants[0].name)
+console.log(restaurants[0].cuisine)
+console.log(restaurants[0].rating)
+
+console.log(restaurants[1].name)
+console.log(restaurants[1].cuisine)
+console.log(restaurants[1].rating)
+
+console.log(restaurants[2].name)
+console.log(restaurants[2].cuisine)
+console.log(restaurants[2].rating)
+
+let schools = [
+    {name: "Sunrise High", city: "Chennai", students: 1200},
+    {name: "Greenwood Academy", city: "Bangalore", students: 900},
+    {name: "Maple Leaf", city: "Delhi", students: 1500}
+]
+
+console.log(schools[0].name)
+console.log(schools[0].city)
+console.log(schools[0].students)
+
+console.log(schools[1].name)
+console.log(schools[1].city)
+console.log(schools[1].students)
+
+console.log(schools[2].name)
+console.log(schools[2].city)
+console.log(schools[2].students)
+
+let employees = [
+    {name: "Ravi", department: "IT", salary: 50000},
+    {name: "Priya", department: "HR", salary: 45000},
+    {name: "Kumar", department: "Finance", salary: 60000}
+]
+
+console.log(employees[0].name)
+console.log(employees[0].department)
+console.log(employees[0].salary)
+
+console.log(employees[1].name)
+console.log(employees[1].department)
+console.log(employees[1].salary)
+
+console.log(employees[2].name)
+console.log(employees[2].department)
+console.log(employees[2].salary)
+
+let countries = [
+    {name: "India", capital: "New Delhi", population: 1400000000},
+    {name: "USA", capital: "Washington D.C.", population: 331000000},
+    {name: "Japan", capital: "Tokyo", population: 125000000}
+]
+
+console.log(countries[0].name)
+console.log(countries[0].capital)
+console.log(countries[0].population)
+
+console.log(countries[1].name)
+console.log(countries[1].capital)
+console.log(countries[1].population)
+
+console.log(countries[2].name)
+console.log(countries[2].capital)
+console.log(countries[2].population)
+
+let sports = [
+    {name: "Football", players: 11, origin: "England"},
+    {name: "Cricket", players: 11, origin: "England"},
+    {name: "Basketball", players: 5, origin: "USA"}
+]
+
+console.log(sports[0].name)
+console.log(sports[0].players)
+console.log(sports[0].origin)
+
+console.log(sports[1].name)
+console.log(sports[1].players)
+console.log(sports[1].origin)
+
+console.log(sports[2].name)
+console.log(sports[2].players)
+console.log(sports[2].origin)
+
+let songs = [
+    {title: "Shape of You", singer: "Ed Sheeran", year: 2017},
+    {title: "Blinding Lights", singer: "The Weeknd", year: 2019},
+    {title: "Believer", singer: "Imagine Dragons", year: 2017}
+]
+
+console.log(songs[0].title)
+console.log(songs[0].singer)
+console.log(songs[0].year)
+
+console.log(songs[1].title)
+console.log(songs[1].singer)
+console.log(songs[1].year)
+
+console.log(songs[2].title)
+console.log(songs[2].singer)
+console.log(songs[2].year)
+

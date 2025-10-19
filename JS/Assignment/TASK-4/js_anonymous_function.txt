@@ -1,0 +1,62 @@
+const wish_list = function(wish){
+    console.log(wish)
+}
+wish_list("prdouct has been added successfully")
+
+
+const pre_order = function(order){
+    console.log(order)
+}
+pre_order(" your order has been order")
+
+
+const door_open = function(door){
+    console,log(door)
+}
+door_open("please open the door")
+
+
+const text_validation = function(text){
+    console.log(text)
+}
+text_validation("text must be 10 character")
+
+const email_validation = function(email){
+    console.log(email)
+}
+email_validation("email must be @ symbol")
+
+const fan_moving = function(fan){
+    console.log(fan)
+}
+fan_moving("4 point speed")
+
+const square_root = function(sqrt){
+    console.log(sqrt)
+}
+square_root("square root of this value is")
+
+const square_number = function(square){
+    console.log(square)
+}
+square_number("square number of value is")
+
+const create_card = function(create){
+    console.log(craete)
+}
+create_card(" card created successfully")
+
+const update_card = function(update){
+    console.log(update)
+}
+update_card("card updated successfully")
+
+const read_card = function(read){
+   console.log(read)
+}
+read_card("card readed successfully")
+
+const delete_card = function(delete){
+    console.log(delete)
+}
+delete_card("card deleted successfully")

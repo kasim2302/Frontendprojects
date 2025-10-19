@@ -1,0 +1,60 @@
+function add(){
+    console.log("added ")
+}
+add()
+
+function multible(){
+   console.log(multiplied)
+}
+multible()
+
+function subtract(){
+    console.log("subtracted")
+}
+subtract()
+
+function division(){
+   console.log("divised")
+}
+division()
+
+function square(){
+   console.log("squared successully")
+}
+square()
+
+function cube(){
+    console.log("need three values")
+}
+cube()
+
+function sla(){
+   console.log("learn new skills here")
+}
+sla()
+
+function frontend(){
+    console.log("create website")
+}
+frontend()
+
+
+function backend(){
+    console.log("logical coding")
+}
+backend()
+
+function login(){
+   console.log("logged in succesfully")
+}
+login()
+
+function signin(){
+    console.log("siginin successfully")
+}
+siginin()
+
+function addtocart(){
+    consol.log("product added")
+}
+addtocart()
