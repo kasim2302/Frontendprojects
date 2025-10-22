@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop with array</title>
+</head>
+<body>
+
+
+    <script>
+        let fruits = ["apple","orange","kiwi","banana","papaya"]
+
+        for(let i=1 ; i <= fruits.length ; i++){
+                    console.log(i ,fruits)
+        }
+
+
+        let table = [1,2,3,4,5,6,7,8,9,10]
+        for(let i=1 ; i<= table.length; i++){
+            let num = 3;
+            console.log(i ,"*" ,num ,"=", num*i)
+        }
+         
+      
+        for(let star=1; star<=5;star++){
+            let row = " "
+            for(let stars=1 ; stars<=star; stars++){
+                row += "*"
+            }
+            console.log(row)
+        }
+    </script>
+    
+</body>
+</html>
