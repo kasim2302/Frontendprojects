@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+    
+
+    <script>
+                
+        let arr = [1,3,5,6,23,56,"house",34.6,true]
+
+    // push() method -  its used to add element at end of the element in an array.//
+        arr.push("welcome",56)
+        console.log(arr)
+
+    // pop() method - its used to reomve element form end of the array.//
+
+        arr.pop()
+        console.log(arr)
+
+    // shift() method - its used to remove the element in begining of the array. //
+       
+        arr.shift()
+        console.log(arr)
+
+    // unshift() method - its used to add element in begining of the array. //
+       
+       arr.unshift(4)
+       console.log(arr)
+
+    // concat() method - used to join two array by using concat//
+
+       let arr2=[1,4,6,7,8,23]
+
+       const newarr = arr.concat(arr2)
+       console.log(newarr)
+       console.log(arr)
+
+    // join() method -  used to convert array to string//
+       const arr4 = arr.join(arr2)
+       console.log(arr4)
+
+
+    // reverse() - used to reverse the array in order//
+    
+    arr5 = [1,2,3,4,5]
+    arr5.reverse()
+    console.log(arr5)
+
+    // slice() - used to get copy of portion in the array.arrays still not changw we just take value form an array.//
+   
+    console.log(arr.slice(1,5))
+
+    // splice() - used to add or remove element from an array. //
+
+    let remove = arr.splice(7,10)
+    console.log(remove)
+    console.log(arr)
+
+    //includes() - used it check the value given by us in the array if its there it return true if not there return false//
+
+    
+        console.log(arr.includes("welcome"))
+        const newarr1 = arr.includes("house")
+        console.log(newarr1)
+                
+    // indexOf() return the first value founded in the array//
+
+        const num = arr.indexOf(23)
+        const num1 = arr.indexOf("house")
+        console.log(num)
+        console.log(num1)
+
+
+        
+    </script>
+</body>
+</html>
