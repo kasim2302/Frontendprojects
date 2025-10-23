@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of loop in js</title>
+</head>
+<body>
+    <h2>for of loop in js</h2>
+
+    <script>
+        let arr=[1,2,3,4,5,6]
+        for(let num of arr){
+            console.log(num)
+        }
+
+        let str = "hello"
+        for(let char of str){
+            console.log(char)
+        }
+        let str1 = "coderacers"
+        for(let team of str1){
+            console.log(team)
+        }
+
+        let arr1 = [12,34,56,23,12]
+        for(let arrays1 of arr1){
+            console.log(arrays1)
+        }
+
+        for(let num2 of arr1){
+            let sum = arr1.reduce((num3,i) => num3 + i ,0)
+            console.log(sum)
+        }
+        
+        let  favorite_animes = ['naruto','demon slayer','solo leveling']
+        for(let anime of favorite_animes){
+            console.log(anime )
+        }
+
+        let sports = ['cricket','football','badminton','volleyball','kabadi','khokho']
+        for(let sport of sports){
+            console.log(sport)
+        }
+
+        let project = "ecommerce"
+        for(let projects of project){
+            console.log(projects)
+        }
+
+        let Aquarium_fish = ['gubby fish','molly fish','gold fish','beta fish']
+        for(let fish of Aquarium_fish){
+            console.log(fish)
+        }
+
+        let task = ['filter','reduce','find','array','object']
+        for(let tasks of task){
+            console.log(tasks)
+        }
+
+        let course = "full stack course"
+        for(let courses of course){
+            console.log(courses)
+        }
+
+        let vehicles = ['bike','car','van','bus','train','aeroplane']
+        for(let vehicle of vehicles){
+            console.log(vehicle)
+        }
+    </script>
+    
+</body>
+</html>

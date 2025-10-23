@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find() - function</title>
+</head>
+<body>
+    <h2>find() - function</h2>
+
+    <script>
+        let arr5 = [1,4,47,834,34,67,12,87,34,"hello","world",87,54,"fruits","vegetables",1110]
+
+        const num = arr5.find((nums)=> nums > 40 )
+        console.log(num)
+
+        const num1 = arr5.find((nums) => nums < 30)
+        console.log(num1)
+
+        const num2 = arr5.find((nums) => nums === "hello")
+        console.log(num2)
+
+        const num3 = arr5.find((nums) => nums === "world")
+        console.log(num3)
+
+        const num4 = arr5.find((nums) => nums < 20 )
+        console.log(num4)
+
+        const num5 = arr5.find((nums) => nums === "fruits")
+        console.log(num5)
+
+        const num6 = arr5.find((nums) => nums === "world")
+        console.log(num6)
+
+        const num7 = arr5.find((nums) =>  nums >100)
+        console.log(num7)
+
+        const num8 = arr5.find((nums) => nums >50)
+        console.log(num8)
+
+        const num9 = arr5.find((nums) => nums >70)
+        console.log(num9)
+
+        const num10 = arr5.find((nums) => nums < 10)
+        console.log(num10)
+
+        const num11 = arr5.find((nums) => nums > 1000)
+        console.log(num11)
+
+    </script>
+</body>
+</html>
