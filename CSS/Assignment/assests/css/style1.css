@@ -27,7 +27,9 @@
     padding: 5px 20px;
 
 }
-
+.logo a{
+    text-decoration: none;
+}
 .logo h3{
     color: #000;
     font-family:  Roboto Condensed, Helvetica, sans-serif;

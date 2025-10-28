@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+</head>
+
+<body>
+    <h2>Tea Shop</h2>
+
+
+    <script>
+
+        // tea shop menu list//
+
+        let menu = ["Tea", "Cofee", "Milk", "Boost", "Horlicks", "Lemon Tea", "Black Tea"]
+
+        let price = [10, 15, 15, 20, 20, 20, 20]
+
+        let shop_menu = menu.forEach((menus, i) => console.log(i, "-", menus))
+
+        console.log("---------------------------------------------------------------------------------")
+
+        let price_list = price.forEach((prices, i) => console.log(i, "-", prices, 'rs'))
+
+        console.log("---------------------------------------------------------------------------------")
+
+        // tea section //
+
+        console.log("Welcome to our shop! ")
+
+        console.log("here the menu list ! what do you want from this menu list, sir/madam.")
+
+        console.log(" ")
+        function tea() {
+            console.log("tea is prepared! wait for few minutes.")
+        }
+        tea()
+
+
+        function tea_distribute() {
+            console.log("tea is ready sir/madam!")
+        }
+        tea_distribute()
+        function tea_count(num_of_teas) {
+            console.log(menu[0] + " -", price[0], "Rs")
+            return num_of_teas * price[0]
+        }
+        tea_count(5)
+        // cofee section//
+
+
+        function cofee() {
+            console.log("cofee is prepared! wait for few minutes.")
+        }
+        cofee()
+
+        function cofee_distribute() {
+            console.log("cofee is ready! sir/madam.")
+        }
+        cofee_distribute()
+
+        function cofee_count(num_of_cofee) {
+            console.log(menu[1], "-", price[1], "Rs")
+            return num_of_cofee * price[1]
+
+        }
+        cofee_count(4)
+
+
+        // Milk section//
+
+
+        function Milk() {
+            console.log("Milk is prepared! wait for few minutes.")
+        }
+        Milk()
+
+        function milk_distribute() {
+            console.log("Milk is ready! sir/madam.")
+        }
+        milk_distribute()
+
+        function milk_count(num_of_milk) {
+            console.log(menu[2], "-", price[2], "Rs")
+            return num_of_milk * price[2]
+        }
+        milk_count(4)
+
+
+        // Boost section//
+
+        function Boost() {
+            console.log("Boost is prepared! wait for few minutes.")
+        }
+        Boost()
+
+        function boost_distribute() {
+            console.log("Boost is ready! sir/madam.")
+        }
+        boost_distribute()
+
+        function boost_count(num_of_boost) {
+            console.log(menu[3], "-", price[3], "Rs")
+            return num_of_boost * price[3]
+        }
+        boost_count(4)
+
+        // Horlicks section//
+
+        function Horlicks() {
+            console.log("Horlicks is prepared! wait for few minutes.")
+        }
+        Horlicks()
+
+        function horlicks_distribute() {
+            console.log("Horlicks is ready! sir/madam.")
+        }
+        horlicks_distribute()
+
+        function horlicks_count(num_of_horlicks) {
+            console.log(menu[4], "-", price[4], "Rs")
+            return num_of_horlicks * price[4]
+        }
+        boost_count(4)
+
+
+        // Lemon Tea section//
+
+        function LemonTea() {
+            console.log("Lemon Tea is prepared! wait for few minutes.")
+        }
+        LemonTea()
+
+        function LemonTea_distribute() {
+            console.log("Lemon Tea is ready! sir/madam.")
+        }
+        LemonTea_distribute()
+
+        function LemonTea_count(num_of_lemontea) {
+            console.log(menu[5], "-", price[5], "Rs")
+            return num_of_lemontea * price[5]
+        }
+        LemonTea_count(4)
+
+        // Black Tea section//
+
+        function BlackTea() {
+            console.log("Black Tea is prepared! wait for few minutes.")
+        }
+        BlackTea()
+
+        function BlackTea_distribute() {
+            console.log("Black Tea is ready! sir/madam.")
+        }
+        BlackTea_distribute()
+
+        function BlackTea_count(num_of_blacktea) {
+            console.log(menu[6], "-", price[6], "Rs")
+            return num_of_blacktea * price[6]
+        }
+        BlackTea_count(4)
+
+        let total_tea = tea_count(7)
+        let total_cofee = cofee_count(2)
+        let total_milk = milk_count(4)
+        let total_boost = boost_count(2)
+        let total_horlicks = horlicks_count(0)
+        let total_lemontea = LemonTea_count(0)
+        let total_blacktea = BlackTea_count(1)
+
+        // Total Bill calculation
+        function total_bill() {
+            let total = total_tea + total_cofee + total_milk + total_boost + total_horlicks + total_lemontea + total_blacktea;
+            console.log("---------------------------------------------------");
+            console.log("Your Total Bill is:", total, "Rs");
+            console.log("---------------------------------------------------");
+        }
+
+        total_bill();
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
