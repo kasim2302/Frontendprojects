@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Form (Search Actor)</title>
+    <style>
+        #container{
+            text-align: center;
+        }
+        #result img{
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        #result{
+            margin-top: 30px;
+        }
+
+        #search{
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        #result{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+     <h2>Search Actor</h2>
+
+     <input type="text" id="search" placeholder="Search image...">
+     <button id="btn">Search</button>
+
+     <div id="result"></div>
+
+    </div>
+     
+
+     <script>
+
+        let actor = {
+            ajith: "assests/img/ajith.jpg",
+            vijay: "assests/img/vijay.jpg",
+            dhanush: "assests/img/dhanush.jpg",
+            kamal: "assests/img/kamal.jpg",
+            rajini: "assests/img/rajini.jpg",
+            arya: "assests/img/arya.avif",
+            jayamravi: "assests/img/jayamravi.jpg",
+            surya: "assests/img/surya.jpg",
+            yuvan: "assests/img/yuvan.jpg",
+            vishal: "assests/img/vishal.jpg",
+        }
+         // styling code//
+        let box = document.getElementById("container")
+        box.style.margin = "auto"
+        box.style.width = "400px"
+        box.style.height = "500px"
+        
+       
+
+
+
+
+         // main section code//
+        let button = document.getElementById("btn");
+        button.style.padding = "10px"
+        button.style.backgroundColor = "black"
+        button.style.color = "white"
+        button.style.borderRadius = "10px"
+        button.style.cursor = "pointer"
+
+
+        button.addEventListener("click",() => {
+
+            let searchtext = document.getElementById("search").value.toLowerCase()
+            let showresult = document.getElementById("result")
+
+            if(actor[searchtext]){
+                showresult.innerHTML = `<img src="${actor[searchtext]}"" alt="${searchtext}">`
+            }
+            else{
+                showresult.innerHTML = "Image Not Found"
+            }
+
+        })
+     </script>
+
+</body>
+</html>
