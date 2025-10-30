@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #banner img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-btn {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .product-btn:hover {
+            background-color: #a0522d;
+        }
+
+        #payment-btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #payment-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Tea shop</h1>
+
+    <button id="show-banner">Show Banner</button>
+    <div id="banner"></div>
+
+    <button id="show-products">Available Products</button>
+    <div id="products"></div>
+
+    <div id="payment"></div>
+
+    <script>
+        const showBannerBtn = document.getElementById("show-banner")
+        const showProductsBtn = document.getElementById("show-products")
+        const bannerDiv = document.getElementById("banner")
+        const productDiv = document.getElementById("products")
+        const paymentDiv = document.getElementById("payment")
+
+        // Show banner
+        showBannerBtn.addEventListener("click", () => {
+            bannerDiv.innerHTML = `<img src="assests/img/banner.jpg" alt="Tea Shop Banner">`
+        })
+
+        
+        showProductsBtn.addEventListener("click", () => {
+            productDiv.innerHTML = ""; 
+            paymentDiv.innerHTML = ""; 
+
+            // Tea button
+            const teaBtn = document.createElement("button")
+            teaBtn.className = "product-btn"
+            teaBtn.innerHTML = `<img src="assests/img/tea.jpg" width="100" height="100"><br>Tea`
+            teaBtn.addEventListener("click", () => showPayment("Tea"))
+            productDiv.appendChild(teaBtn)
+
+            // Coffee button
+            const coffeeBtn = document.createElement("button")
+            coffeeBtn.className = "product-btn"
+            coffeeBtn.innerHTML = `<img src="assests/img/coffee.jpg" width="100" height="100"><br>Coffee`
+            coffeeBtn.addEventListener("click", () => showPayment("Coffee"))
+            productDiv.appendChild(coffeeBtn)
+
+            // Black Tea button
+            const blackTeaBtn = document.createElement("button")
+            blackTeaBtn.className = "product-btn"
+            blackTeaBtn.innerHTML = `<img src="assests/img/blacktea.jpg" width="100" height="100"><br>Black Tea`
+            blackTeaBtn.addEventListener("click", () => showPayment("Black Tea"))
+            productDiv.appendChild(blackTeaBtn)
+
+            // Lemon Tea button
+            const lemonTeaBtn = document.createElement("button")
+            lemonTeaBtn.className = "product-btn"
+            lemonTeaBtn.innerHTML = `<img src="assests/img/lemontea.jpg" width="100" height="100"><br>Lemon Tea`
+            lemonTeaBtn.addEventListener("click", () => showPayment("Lemon Tea"))
+            productDiv.appendChild(lemonTeaBtn)
+
+            // Samosa button
+            const samosaBtn = document.createElement("button")
+            samosaBtn.className = "product-btn"
+            samosaBtn.innerHTML = `<img src="assests/img/samosa.jpg" width="100" height="100"><br>Samosa`
+            samosaBtn.addEventListener("click", () => showPayment("Samosa"))
+            productDiv.appendChild(samosaBtn)
+
+            // Cookies button
+            const CookiesBtn = document.createElement("button")
+            CookiesBtn.className = "product-btn"
+            CookiesBtn.innerHTML = `<img src="assests/img/cookies.jpg" width="100" height="100"><br>Cookies`
+            CookiesBtn.addEventListener("click", () => showPayment("Cookies"))
+            productDiv.appendChild(CookiesBtn)
+        });
+
+        // Function to show payment button
+        function showPayment(productName) {
+            paymentDiv.innerHTML = `
+        <h3>You selected: ${productName}</h3>
+        <button id="payment-btn">Proceed to Payment</button>`
+            const paymentBtn = document.getElementById("payment-btn")
+            paymentBtn.addEventListener("click", () => {
+                alert("Payment Successful ")
+            })
+        }
+
+    </script>
+</body>
+
+</html>
