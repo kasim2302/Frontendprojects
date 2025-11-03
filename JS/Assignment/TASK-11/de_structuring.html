@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Structure</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #heading{
+            background-color: black;
+            color: white;
+            padding: 2px;
+        }
+        #data{
+          
+           text-align: justify;
+           font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>DeStructuring</h2>
+    <div id="heading"></div>
+    <div id="data"> </div>
+
+    <script>
+
+        const showdata = document.getElementById("data")
+        const heading_1 = document.getElementById("heading")
+        let biggboss = {
+            name1: "Sabari",
+            name2: "Diwagar",
+            name3: "Kamrudin",
+            name4: "Parvathi",
+            name5: "Viyena",
+            name6: "Vinoth",
+            name7: "Ramya",
+            name8: "Subiksha",
+            name9: "Kalaiarasan",
+            name10: "Kemi"
+        }
+        const { name1, name2, name3, name4, name5, name6, name7, name8, name9, name10 } = biggboss
+
+        heading_1.innerHTML = `<h2 style = "text-align:center;">Bigg Boss Contestants </h2>`
+        showdata.innerHTML = `<ol>
+                                 <li>${name1}</li>
+                                 <li>${name2}</li>
+                                 <li>${name3}</li>
+                                 <li>${name4}</li>
+                                 <li>${name5}</li>
+                                 <li>${name6}</li>
+                                 <li>${name7}</li>
+                                 <li>${name8}</li>
+                                 <li>${name9}</li>
+                                 <li>${name10}</li>
+                                </ol>`
+
+ 
+
+
+                    
+                               
+
+
+    </script>
+</body>
+
+</html>

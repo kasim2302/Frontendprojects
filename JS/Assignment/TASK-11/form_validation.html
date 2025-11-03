@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation using DOM</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    form {
+        background: white;
+        padding: 80px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 400px;
+        margin-top: 50px;
+    }
+    form h1{
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .error {
+        color: red;
+        font-size: 13px;
+    }
+    button {
+        margin-top: 15px;
+        background: #0078ff;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #005fcc;
+    }
+</style>
+</head>
+<body>
+
+<form id="myForm">
+    <h1>Registration Form</h1>
+
+    <label>Name</label>
+    <input type="text" id="name">
+    <span class="error" id="nameError"></span>
+
+    <label>Email</label>
+    <input type="email" id="email">
+    <span class="error" id="emailError"></span>
+
+    <label>Password</label>
+    <input type="password" id="password">
+    <span class="error" id="passwordError"></span>
+
+    <label>Age</label>
+    <input type="number" id="age">
+    <span class="error" id="ageError"></span>
+
+    <label>Mobile Number</label>
+    <input type="text" id="mobile">
+    <span class="error" id="mobileError"></span>
+
+    <label>Text Box</label>
+    <textarea id="textbox" rows="3"></textarea>
+    <span class="error" id="textboxError"></span>
+
+    <label>Field</label>
+    <select id="selectOption">
+        <option value="">--Select--</option>
+        <option value="Male">IT</option>
+        <option value="Female">NON - IT</option>
+    </select>
+    <span class="error" id="selectError"></span>
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <span class="error" id="genderError"></span>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e){
+    e.preventDefault()
+
+    // Get values
+    const name = document.getElementById("name").value.trim()
+    const email = document.getElementById("email").value.trim()
+    const password = document.getElementById("password").value.trim()
+    const age = document.getElementById("age").value.trim()
+    const mobile = document.getElementById("mobile").value.trim()
+    const textbox = document.getElementById("textbox").value.trim()
+    const selectOption = document.getElementById("selectOption").value
+    const gender = document.querySelector('input[name="gender"]:checked')
+
+    // Clear previous errors
+    document.querySelectorAll(".error").forEach(e => e.innerText = "")
+
+    let valid = true
+
+    // Validation checks
+    if (name === "") {
+        document.getElementById("nameError").innerText = "Name cannot be empty"
+        valid = false
+    }
+
+    if (email === "" || !email.includes("@") || !email.includes(".")) {
+        document.getElementById("emailError").innerText = "Enter a valid email address"
+        valid = false
+    }
+
+    if (password.length < 8) {
+        document.getElementById("passwordError").innerText = "Password must be at least 8 characters"
+        valid = false
+    }
+
+    if (age === "" && age >= 18) {
+        document.getElementById("ageError").innerText = "Enter a valid age , age should be above 18"
+        valid = false
+    }
+
+    if (mobile.length !== 10 || isNaN(mobile)) {
+        document.getElementById("mobileError").innerText = "Mobile number must be 10 digits"
+        valid = false
+    }
+
+    if (textbox.length < 20) {
+        document.getElementById("textboxError").innerText = "Text must be at least 20 characters"
+        valid = false
+    }
+
+    if (selectOption === "") {
+        document.getElementById("selectError").innerText = "Select a valid option"
+        valid = false
+    }
+
+    if (!gender) {
+        document.getElementById("genderError").innerText = "Select your gender"
+        valid = false
+    }
+
+    if (valid) {
+        alert("Form submitted successfully!");
+        // Store data in localStorage to show on next page
+        const formData = {
+            name, email, password, age, mobile, textbox, selectOption, gender: gender.value
+        }
+        localStorage.setItem("formData", JSON.stringify(formData))
+        window.location.href = "formdata_table.html"
+    }
+})
+</script>
+
+</body>
+</html>
