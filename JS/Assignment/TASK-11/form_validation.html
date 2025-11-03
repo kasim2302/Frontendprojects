@@ -88,7 +88,7 @@
 
     <label>Field</label>
     <select id="selectOption">
-        <option value="">--Select--</option>
+        <option value="">--Select Field--</option>
         <option value="Male">IT</option>
         <option value="Female">NON - IT</option>
     </select>
@@ -137,7 +137,7 @@ document.getElementById("myForm").addEventListener("submit", function(e){
         valid = false
     }
 
-    if (age === "" && age >= 18) {
+    if (age === "" && age <= 18) {
         document.getElementById("ageError").innerText = "Enter a valid age , age should be above 18"
         valid = false
     }

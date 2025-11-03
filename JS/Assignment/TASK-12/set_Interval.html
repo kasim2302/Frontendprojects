@@ -1,0 +1,87 @@
+<h2>setInterval() - Method in js</h2>
+
+<script>
+    let count = 0
+    const timer = setInterval(()=>{
+        count++
+        console.log(`count is ${count}`)
+        if(count === 10){
+            clearInterval(timer)
+            console.log("stopped in 10")
+        }
+    },1000)
+     
+    var number = 0
+    const numbers = setInterval(()=>{
+        number++
+        console.log(number)
+        if(number > 10){
+            clearInterval(numbers)
+            console.log("stop")
+        }
+    },2000)
+
+    const shop = setInterval(()=>{
+        console.log("welocme to my shop!")
+    },1000)
+
+    const cricket = setInterval(()=>{
+        console.log("Cricket is popular sports in india.")
+    },3000)
+
+    const sports = setInterval(()=>{
+        console.log("sports")
+    },2000)
+
+    const water = setInterval(()=>{
+        console.log("drink 8 glass of water.")
+    },2500)
+
+    const food = setInterval(()=>{
+        console.log("foodie")
+    },1500)
+
+    const code = setInterval(()=>{
+        console.log("do code daily")
+    },10000)
+
+    const password = setInterval(()=>{
+        console.log("Enter the password")
+    },1500)
+
+    const email = setInterval(() => {
+        console.log("enter the email")
+    },2000)
+
+    const car = setInterval(()=>{
+        console.log("please drive safely!")
+    },6000)
+
+    const helmet = setInterval(()=>{
+        console.log("wear helmet! before ride the bike.")
+    },4000)
+
+    const phone = setInterval(()=>{
+        console.log("enter 10 digit phone number")
+    },2000)
+
+    const pincode = setInterval(()=>{
+        console.log("please enter pincode")
+    },3000)
+
+    const country_code  = setInterval(()=>{
+        console.log("Enter valid country code.")
+    },6000)
+
+    const fish_tank = setInterval(()=>{
+        console.log("add fish in the fish tank")
+    },3000)
+
+    const work = setInterval(()=>{
+        console.log("Do your work.")
+    },8000)
+
+    const house = setInterval(()=>{
+        console.log("Enter into the house!")
+    },10000)
+</script>
