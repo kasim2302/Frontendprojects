@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async & Await - Fetch </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            height: 150px;
+            width: 200px;
+            margin: 10px;
+            background-color: greenyellow;
+            color: black;
+        }
+        .card p{
+            padding: 8px;
+            font-size: 18px;
+        
+        }
+        h2{
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+     <h2>User Information</h2>
+    <div id="container">
+
+    </div>
+
+
+    <script>
+
+        const getuser = async() =>{
+        
+        try{
+            const users_data = await fetch("https://dummyjson.com/users?limit=18")
+            const user_data = await users_data.json()
+
+            const user = user_data.users;
+
+
+            const table = document.getElementById("container")
+
+            user.forEach(datas => {
+                const table_data = document.createElement("div")
+                table_data.className = "card"
+                table_data.innerHTML = `<p>id : ${datas.id}</p> <p>Fist Name : ${datas.firstName}</p> 
+                <p>Last Name : ${datas.lastName}</p> <p>Age : ${datas.age}</p>`
+                   
+
+                    table.appendChild(table_data)
+            });
+        }
+        catch(error){
+               console.log("user data is not found!",error)
+        }
+
+            
+
+
+
+        }
+
+        getuser()
+    </script>
+</body>
+</html>
