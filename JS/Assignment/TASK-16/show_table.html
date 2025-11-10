@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issued Data</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        table th {
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            margin-bottom: 100px;
+        }
+        #btn{
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;       
+            cursor: pointer;     
+            margin-top: 50px;
+            margin-left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Issued Data</h2>
+        <table border="1">
+
+            <thead>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Issue</th>
+                <th>Location</th>
+                <th>how you know</th>
+                <th>Review</th>
+            </thead>
+            <tbody id="data2">
+
+            </tbody>
+
+        </table>
+        <button id="btn">Back to form</button>
+    </div>
+    
+
+
+    <script>
+        const problem_data = localStorage.getItem("datas")
+
+        const problem_data_obj = JSON.parse(problem_data)
+
+        const datas = problem_data_obj
+
+        const show_data = document.getElementById("data2")
+        datas.forEach((data,i) => {
+
+            const row = `
+            <td>${i+1}</td>
+            <td>${data.username}</td>
+            <td>${data.phonenumber}</td>
+            <td>${data.problems}</td>
+            <td>${data.area}</td>
+            <td>${data.knows}</td>
+            <td>${data.reviewss}</td>
+            `;
+            show_data.innerHTML += row
+        });
+
+        const button  = document.getElementById("btn")
+        button.addEventListener("click",()=>{
+            window.location.href = "report_problem_form.html"
+        })
+
+    </script>
+
+</body>
+
+</html>

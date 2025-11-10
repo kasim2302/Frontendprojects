@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Problem</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1350px;
+            height: 700px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form{
+            width: 350px;
+            height: 500px;
+            padding-left: 15px;
+            padding-top: 30px;
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+            font-size: 15px;
+        }
+        .field{
+            padding: 5px;
+        }
+        
+        .field input{
+            margin-top: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+        #but{
+            padding: 8px;
+            width: 300px;
+            margin-left: 5px;
+            margin-top: 10px;
+            background-color: rgb(9, 9, 148);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form" autocomplete="on">
+            <div>
+                <h2 style="text-align: center; padding-bottom: 10px;">Report Form</h2>
+            </div>
+           <div class="field">
+            <label for="username">UserName</label><br>
+            <input type="text" id="username" placeholder="Enter your username">
+           </div>
+            <div class="field">
+            <label for="phonenumber">Phone Number</label><br>
+            <input type="tel" id="phonenumber" placeholder="Enter your phonenumber" maxlength="10">
+           </div>
+            <div class="field">
+            <label for="problem">Problem</label><br>
+            <input type="text" id="problem" placeholder="Enter your problem">
+           </div>
+            <div class="field">
+            <label for="city">City</label><br>
+            <input type="text" id="city" placeholder="Location">
+           </div>
+            <div class="field">
+            <label for="know">How do you know</label><br>
+            <input type="text" id="know" placeholder="how do you know">
+           </div>
+            <div class="field">
+            <label for="review">Review</label><br>
+            <input type="text" id="review" placeholder="write here">
+           </div>
+           <div class="but">
+            <button id="but" value="submit">Submit</button>
+           </div>
+        </form>
+    </div>
+    
+    <script>
+        const myform = document.getElementById("form")
+        
+        myform.addEventListener("submit",(e)=>{
+        
+            e.preventDefault()
+            const name = document.getElementById("username").value;
+            const Phone = document.getElementById("phonenumber").value;
+            const issue = document.getElementById("problem").value
+            const location = document.getElementById("city").value
+            const seen = document.getElementById("know").value
+            const reviews = document.getElementById("review").value
+
+           
+            const Issued_data = {username: name, phonenumber: Phone , problems:  issue , area: location,knows: seen, reviewss: reviews}
+             
+            const data = localStorage.getItem("datas")
+
+            const change_to_obj = JSON.parse(data)
+
+            const issue_data = change_to_obj || []
+
+            issue_data.push(Issued_data)
+
+            const data_string = JSON.stringify(issue_data)
+
+            const store_data = localStorage.setItem("datas",data_string)
+            console.log(store_data)
+
+            alert("Your response added succesfully")
+
+            myform.reset()
+
+            window.location.href = "show_table.html"
+
+        });
+
+      
+    </script>
+</body>
+</html>
