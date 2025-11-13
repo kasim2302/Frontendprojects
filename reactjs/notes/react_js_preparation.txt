@@ -1,0 +1,163 @@
+🔹 What is an Object?
+
+An object in JavaScript is a collection of key–value pairs.
+Each key is a property name, and the value can be data or a function.
+Example:
+
+const person = {
+  name: "Kasim",
+  age: 22,
+  greet: function() {
+    console.log("Hello!");
+  }
+};
+
+
+Objects help group related data and behavior together.
+
+🔹 Variable Behavior
+
+Variables can hold different types of data (numbers, strings, arrays, objects, etc.).
+
+JavaScript uses dynamic typing, so the data type can change at runtime.
+Example:
+
+let data = 10;
+data = "Hello"; // valid in JS
+
+
+var, let, and const control how variables behave in scope and reassignment.
+
+🔹 What are Nested Objects?
+
+A nested object means having one object inside another.
+It’s used to represent structured or grouped data.
+Example:
+
+const user = {
+  name: "Kasim",
+  address: {
+    city: "Chennai",
+    pincode: 600095
+  }
+};
+console.log(user.address.city); // Chennai
+
+🔹 Array
+
+An array is a collection of elements stored in a single variable.
+Example:
+
+const fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits[1]); // Banana
+
+
+Arrays are used to store lists of data like numbers, strings, or objects.
+
+🔹 Array of Objects
+
+When each element of an array is an object, it is called an array of objects.
+Example:
+
+const students = [
+  { name: "Kasim", age: 22 },
+  { name: "Ali", age: 23 }
+];
+console.log(students[0].name); // Kasim
+
+🔹 Dot Notation
+
+Dot notation is used to access object properties.
+Example:
+
+const car = { brand: "BMW", color: "Black" };
+console.log(car.brand); // BMW
+
+
+You can also use bracket notation like car["color"].
+
+🔹 Three Types of Functions
+
+Named Function
+
+function greet() {
+  console.log("Hello");
+}
+
+
+Anonymous Function (used in expressions)
+
+const greet = function() {
+  console.log("Hi");
+};
+
+
+Arrow Function
+
+const greet = () => console.log("Hey");
+
+🔹 Array Methods
+
+Common methods used with arrays are:
+
+push() – adds element at the end
+
+pop() – removes last element
+
+shift() – removes first element
+
+unshift() – adds element at start
+
+map() – returns a new array after applying a function
+
+filter() – returns elements that pass a condition
+
+reduce() – reduces array to a single value
+Example:
+
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2); // [2, 4, 6]
+
+🔹 Higher-Order Function
+
+A higher-order function is a function that takes another function as an argument or returns a function.
+Example:
+
+function higherOrder(fn) {
+  fn();
+}
+higherOrder(() => console.log("This is a callback"));
+
+
+map(), filter(), and reduce() are all higher-order functions.
+
+🔹 Callback Function
+
+A callback function is a function passed as an argument to another function to be executed later.
+Example:
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+function bye() {
+  console.log("Goodbye!");
+}
+greet("Kasim", bye);
+
+🔹 File Handling (in Node.js)
+
+File handling is used to read, write, or update files using the fs module in Node.js.
+Example:
+
+const fs = require("fs");
+
+// Write to file
+fs.writeFileSync("data.txt", "Hello Kasim!");
+
+// Read from file
+const content = fs.readFileSync("data.txt", "utf-8");
+console.log(content);
+
+
+It helps store and manage data in local files for backend development.
