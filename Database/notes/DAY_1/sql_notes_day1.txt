@@ -1,0 +1,4 @@
+modify - used to change the data type of column
+change -used to chnage the name o the column
+
+by using alter table we use like that alter table table name reanmae to table name;

@@ -1,0 +1,146 @@
+Numeric Data Types
+
+Used for storing numbers (integers or decimals).
+
+Data Type	Description	Example
+INT / INTEGER	Whole numbers (usually 4 bytes)	42, -7
+SMALLINT	Smaller integer (2 bytes)	32000
+BIGINT	Large integer (8 bytes)	9000000000
+DECIMAL(p,s) / NUMERIC(p,s)	Fixed-point numbers; p = total digits, s = digits after decimal	123.45 → DECIMAL(5,2)
+FLOAT / REAL / DOUBLE	Approximate floating-point numbers	3.14, 2.718
+2. Character / String Data Types
+
+Used to store text.
+
+Data Type	Description	Example
+CHAR(n)	Fixed-length string of n characters	'abc ' (always 5 chars if CHAR(5))
+VARCHAR(n)	Variable-length string up to n characters	'Hello'
+TEXT	Large variable-length text	"This is a long paragraph..."
+
+Tip: Use CHAR for consistent length, VARCHAR for variable length, and TEXT for large blocks.
+
+3. Date and Time Data Types
+
+Used for storing dates, times, or timestamps.
+
+Data Type	Description	Example
+DATE	Stores date (YYYY-MM-DD)	2025-11-28
+TIME	Stores time (HH:MM:SS)	14:30:00
+DATETIME / TIMESTAMP	Stores both date and time	2025-11-28 14:30:00
+YEAR	Stores a year (2 or 4 digits)	2025
+4. Boolean / Logical
+
+Used to store true/false values.
+
+Data Type	Description	Example
+BOOLEAN / BOOL	Stores TRUE or FALSE	TRUE, FALSE
+
+Some SQL databases (like MySQL) store BOOLEAN as tinyint (0 = false, 1 = true).
+
+5. Binary / Blob Data Types
+
+Used to store binary data, like images, audio, files.
+
+Data Type	Description	Example
+BINARY(n)	Fixed-length binary data	0x0F1A
+VARBINARY(n)	Variable-length binary data	0xA1B2C3
+BLOB	Large binary object	Image or file content
+6. Other / Special Data Types
+
+ENUM – List of allowed string values (MySQL)
+Example: ENUM('small','medium','large')
+
+SET – Stores multiple predefined string values (MySQL)
+
+JSON – Stores JSON objects (MySQL, PostgreSQL)
+
+UUID / GUID – Stores unique identifiers
+
+
+
+In SQL, constraints are rules applied to table columns to enforce data integrity and ensure the data in the database is accurate and reliable. They define what kind of data is allowed and how tables relate to each other.
+
+
+
+1. PRIMARY KEY
+
+Uniquely identifies each record in a table.
+
+Cannot be NULL.
+
+Only one primary key per table (can be composite).
+
+Example:
+
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50)
+);
+
+2. FOREIGN KEY
+
+Ensures referential integrity between tables.
+
+Links a column in one table to the PRIMARY KEY of another table.
+
+Example:
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    StudentID INT,
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
+
+3. UNIQUE
+
+Ensures all values in a column (or a combination of columns) are unique.
+
+A table can have multiple UNIQUE constraints.
+
+Example:
+
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    Email VARCHAR(50) UNIQUE
+);
+
+4. NOT NULL
+
+Ensures the column cannot contain NULL values.
+
+Example:
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL
+);
+
+5. CHECK
+
+Ensures values in a column satisfy a specific condition.
+
+Example:
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    Price DECIMAL(10,2) CHECK (Price > 0)
+);
+
+6. DEFAULT
+
+Provides a default value for a column if no value is specified during insertion.
+
+Example:
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Status VARCHAR(10) DEFAULT 'Active'
+);
+
+7. INDEX (optional, for performance)
+
+Not strictly a constraint, but can speed up lookups.
+
+Example:
+
+CREATE INDEX idx_email ON Users(Email);
