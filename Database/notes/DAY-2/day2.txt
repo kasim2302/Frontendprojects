@@ -1,0 +1,14 @@
+Data manipulation language 
+   used to insert value or updated value in coloumns
+
+-insert  - insert to single row - ,now() for joining date or time - modify user for changr the data type - multi line insert that means insert multiple values
+-update - syntax - update tablename set colname = "value",email = "react@gmail.com" where condition;  we can update it by set unique values - single col update,multim col update 
+-delete - syntax - delete from tablename where condtion; - if we use delete the table it will not allowed because its in safe mode , if we want to delete still we can change into unsafe mode and we can delete it.
+-truncate - that will empty all the values in the table -  syntax - truncate table tablename 
+set SQL-SAFE-UPDATES = 0 - for safe updates 
+drop - syntax - drop table tablename - used to delete table in the db.
+
+
+task 
+craete two db , ine db is movie - table name - (casting and salary relatable set foreign key , materials,salary maintanece,staff attendance , technicians)  , second db is construction company db - table name - 
+(materials, staffs , attentdance , stock, salary).

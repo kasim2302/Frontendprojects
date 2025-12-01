@@ -1,0 +1,50 @@
+DQL - Data Query Language - used to fetch data from tables and we can use specific data
+ from the table and filter the specific datas and fetch the datas based on groups orders 
+and having and also we used where condition alse use fetch the data specifically.
+as - aliace for stroing temporary col name with data.
+where keyword - used the check the condition for the queries 
+common operator 
+  = equal to
+ != not equal to 
+ > greater than 
+ < ;less than
+ <= less than or equal to
+ >= greater than or equal to 
+
+  Logical operator or comparision operator
+
+  & And opertor
+  | OR operator
+  ! NOT operator
+
+  in,not in operator 
+   BETWEEN KEYWORD  
+    LIKE - pattern command "A%" if we put % before the charater that means start with A , 
+    if the % before the chracter that means end with A. '% ar %' - contains that means it 
+select all the values who have ar in this name.
+
+   ORDER By - alphapetical order like sorting ascending order - ASC  or descending order - DESC.
+   LIMIT - syntax - select * from tablename limit 1;
+   DISTINCT - remove the duplicates - syntax - select distinct tablename; 
+
+   Aggrigate function:
+    count()  - count the data in the table
+    sum()  - sum of the value
+    avg()  - average value
+    min() - lowest value
+    max()  - maximum value
+    positions instead of star in select , but conditions should use after where.
+    
+    GROUP BY -    groups rows based on column 
+     HAVING - we can use where before group by clause ,   show only if the age is above 25 we can get the data after group by data .
+
+     we can use aggergate function only for having clauses. there is no need for where keyword.
+
+
+   task 
+    create table with column id,department,salary,city  
+    
+    total number of employees in each dept
+   
+
+
